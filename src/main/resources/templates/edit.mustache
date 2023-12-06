@@ -1,0 +1,19 @@
+<html>
+<body>
+<a href="/">List</a><br>
+{{#eroare}}{{eroare}}<br>{{/eroare}}
+<form action="/edit" method="post">
+    <input type="hidden" name="id" value="{{contact.id}}"/>
+    Nume:
+    <input name="nume" type="text" value="{{contact.nume}}"/>
+    <br>
+    Email:
+    <input name="email" type="text" value="{{contact.email}}"/>
+    <br>
+    Telefon:
+    <input name="telefon" type="text" value="{{contact.telefon}}"/>
+    <br>
+    <button type="submit">Save</button>
+</form>
+</body>
+</html>

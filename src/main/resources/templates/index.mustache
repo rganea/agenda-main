@@ -1,0 +1,22 @@
+<html>
+<body>
+<a href="/add">Add</a>
+<br>
+    <table>
+        <tr>
+            <th>nume</th>
+            <th>email</th>
+            <th>telefon</th>
+            <th></th>
+        </tr>
+        {{#contacts}}
+        <tr>
+            <td>{{nume}}</td>
+            <td>{{email}}</td>
+            <td>{{#telefon}} {{telefon}} {{/telefon}} {{^telefon}} necunoscut {{/telefon}}</td>
+            <td><a href="/edit?id={{id}}">Edit</td>
+        </tr>
+        {{/contacts}}
+    </table>
+</body>
+</html>
